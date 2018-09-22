@@ -1,0 +1,6 @@
+framework module Pods_SlideToOpen {
+  umbrella header "Pods-SlideToOpen-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ParameterVocabularies</key>
+	<array>
+		<dict>
+			<key>ParameterVocabulary</key>
+			<array>
+				<dict>
+					<key>VocabularyItemIdentifier</key>
+					<string>slide_to_open</string>
+					<key>VocabularyItemSynonyms</key>
+					<array>
+						<dict>
+							<key>VocabularyItemExamples</key>
+							<array>
+								<string>Open Gate using SlideToOpen</string>
+								<string>Open Gate by SlideToOpen</string>
+								<string>SlideToOpen</string>
+								<string>Get ETA in Way</string>
+								<string>Go Online in Way</string>
+								<string>Book ride in Way</string>
+								<string>Get shuttle for parking</string>
+								<string>Book table in way</string>
+								<string>Track shuttle</string>
+							</array>
+						</dict>
+					</array>
+				</dict>
+			</array>
+			<key>ParameterNames</key>
+			<array>
+				<string>INRequestRideIntent.SlideToOpen</string>
+			</array>
+		</dict>
+	</array>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INRequestRideIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Open Gate using SlideToOpen</string>
+				<string>Open Gate by SlideToOpen</string>
+				<string>SlideToOpen</string>
+				<string>Get ETA in Way</string>
+				<string>Go Online in Way</string>
+				<string>Book ride in Way</string>
+				<string>Get shuttle for parking</string>
+				<string>Book table in way</string>
+				<string>Track shuttle</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

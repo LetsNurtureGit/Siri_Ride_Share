@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="xTn-lU-fEE">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="Slide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rlz-VQ-ibX">
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="BUL-Gp-dSs"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rlz-VQ-ibX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="93r-Gq-3e0"/>
+                            <constraint firstAttribute="trailing" secondItem="Rlz-VQ-ibX" secondAttribute="trailing" id="bju-AB-CmB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Rlz-VQ-ibX" secondAttribute="bottom" id="cWQ-NS-FXD"/>
+                            <constraint firstItem="Rlz-VQ-ibX" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="kHW-jN-JNg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="vL2-67-Iw0"/>
+                    <connections>
+                        <outlet property="mapView" destination="Rlz-VQ-ibX" id="1b2-bQ-wBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="36.431784107946029"/>
+        </scene>
+        <!--ParkingVC-->
+        <scene sceneID="meO-E7-HyE">
+            <objects>
+                <viewController storyboardIdentifier="parkingVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iy2-fo-HuL" customClass="parkingVC" customModule="Slide" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="52A-oJ-Grm"/>
+                        <viewControllerLayoutGuide type="bottom" id="DZd-C3-06K"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h7V-XO-6S6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0x-8E-8Ou">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="M0x-8E-8Ou" firstAttribute="height" secondItem="h7V-XO-6S6" secondAttribute="height" id="6mQ-RL-dmD"/>
+                            <constraint firstItem="M0x-8E-8Ou" firstAttribute="width" secondItem="h7V-XO-6S6" secondAttribute="width" id="Brf-cf-tkq"/>
+                            <constraint firstItem="M0x-8E-8Ou" firstAttribute="centerX" secondItem="h7V-XO-6S6" secondAttribute="centerX" id="s5P-W4-RDb"/>
+                            <constraint firstItem="M0x-8E-8Ou" firstAttribute="centerY" secondItem="h7V-XO-6S6" secondAttribute="centerY" id="tOk-Aj-VFx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Q9c-P7-iLn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2015.2" y="-394.45277361319341"/>
+        </scene>
+        <!--CustomNVC-->
+        <scene sceneID="yPO-T1-QHO">
+            <objects>
+                <navigationController storyboardIdentifier="CustomNVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="xTn-lU-fEE" customClass="CustomNVC" customModule="Slide" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LWb-kY-cmI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="PB0-hm-ykl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rTC-y6-Bo2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="-646.32683658170924"/>
+        </scene>
+    </scenes>
+</document>
